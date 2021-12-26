@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+  <title>네이버</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+  <link rel="stylesheet" href="./webfont.css">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="index_footer.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Dotum, '돋움', Helvetica, "Apple SD Gothic Neo", sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+    }
+
+    .inline-block {
+      display: inline-block;
+    }
+
+    .float-left {
+      float: left;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <div class="center-align">
+      <!-- 가운데 정렬용 div -->
+      <!-- 속성명: 속성값; 속성명2: 속성값2;  -->
+      <!-- 인라인 스타일 -->
+      <div id="header-top">
+        <a class="naver-home" href=""><span>네이버를 시작페이지로    >  </span></a>
+        <a href=""><i class="jr-naver"></i></a>
+        <a href=""><i class="happy-bean"></i></a>
+      </div>
+      <div id="header-search">
+        <a href="https://www.naver.com">
+          <h1>
+            <img src="https://s.pstatic.net/static/www/mobile/edit/20211223/mobile_140336467102.gif" width="415"
+              height="160" class="special_img" alt="크리스마스 이브" style="position: relative; bottom: 54px; right: 112px;">
+            <span>네이버</span>
+          </h1>
+        </a>
+        <h2 class="blind">검색창</h2>
+        <form class="inline-block" action="https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query=">
+          <fieldset>
+            <legend class="blind">검색</legend>
+            <input />
+            <span id="search-keyboard"></span>
+            <span id="search-history"></span>
+            <button type="submit">
+              <span class="blind">검색</span>
+              <span id="search-image"></span>
+            </button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </header>
+
+
+  <nav>
+    <div class="center-align relative">
+      <!-- <div id="search-ranking">
+      <h2 class="blind">실시간 검색어</h2>
+      <div>
+        <span id="rank-number">1</span>
+        <span id="rank-title">제로초</span>
+      </div>
+      <ul>
+        <li>
+          <span class="rank-number">1</span>
+          <span class="rank-title">제로초</span>
+        </li>
+        <li>
+          <span class="rank-number">2</span>
+          <span class="rank-title">제로초</span>
+        </li>
+        <li>
+          <span class="rank-number">3</span>
+          <span class="rank-title">제로초</span>
+        </li>
+        <li>
+          <span class="rank-number">4</span>
+          <span class="rank-title">제로초</span>
+        </li>
+        <li>
+          <span class="rank-number">5</span>
+          <span class="rank-title">제로초</span>
+        </li>
+        <li>
+          <span class="rank-number">6</span>
+          <span class="rank-title">제로초</span>
+        </li>
+        <li>
+          <span class="rank-number">7</span>
+          <span class="rank-title">제로초</span>
+        </li>
+        <li>
+          <span class="rank-number">8</span>
+          <span class="rank-title">제로초</span>
+        </li>
+        <li>
+          <span class="rank-number">9</span>
+          <span class="rank-title">제로초</span>
+        </li>
+        <li>
+          <span class="rank-number">10</span>
+          <span class="rank-title">제로초</span>
+        </li>
+      </ul>
+    </div> -->
+      <ul id="nav-menu">
+        <li>
+          <a href="">
+            <span class="nav-item-mail"></span>
+            <span class="blind">메일</span>
+          </a>
+        </li>
+        <li><a href=""><span></span><span class="blind">카페</span></a></li>
+        <li><a href=""><span></span><span class="blind">블로그</span></a></li>
+        <li><a href=""><span></span><span class="blind">지식인</span></a></li>
+        <li><a href=""><span></span><span class="blind">네이버쇼핑</span></a></li>
+        <li><a href=""><span></span><span class="blind">네이버페이</span></a></li>
+        <li><a href=""><span></span><span class="blind">네이버TV</span></a></li>
+        <li><a href=""><span></span><span class="blind">사전</span></a></li>
+        <li><a href=""><span></span><span class="blind">뉴스</span></a></li>
+        <li><a href=""><span></span><span class="blind">증권</span></a></li>
+        <li><a href=""><span></span><span class="blind">부동산</span></a></li>
+        <li><a href=""><span></span><span class="blind">지도</span></a></li>
+        <li><a href=""><span></span><span class="blind">영화</span></a></li>
+        <li><a href=""><span></span><span class="blind">뮤직</span></a></li>
+        <li><a href=""><span></span><span class="blind">책</span></a></li>
+        <li><a href=""><span></span><span class="blind">웹툰</span></a></li>
+      </ul>
+      <div class="nav-divider"></div>
+      <ul>
+        <li class="more"><a href=""><span></span><span class="blind">더보기</span></a></li> 
+      </ul>
+    </div>
+  </nav>
+
+
+
+  <main>
+    <div id="main-centered" class="center-align">
+      <div id="main-first-block">
+        <section id="main-ad">
+          <h3 class="blind">광고</h3>
+          <a href="">
+            <img src="https://ssl.pstatic.net/tveta/libs/1361/1361985/126c4cabe340469c3305_20211223150820944.jpg"
+              width="740" height="120">
+          </a>
+        </section>
+        <section id="main-login">
+          <h3 class="blind">로그인</h3>
+          <div class="login-wrapper">
+            <span class="login-text">네이버를 더 안전하고 편리하게 이용하세요.</span>
+            <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fwww.naver.com">
+              <span class="blind">NAVER 로그인</span>
+              <span class="login-image">
+              <img src="login.png" alt="" width="315" height="48" >
+              </span>
+            </a>
+            <a class="login-signup"
+              href="https://nid.naver.com/nidregister.form?url=https%3A%2F%2Fwww.naver.com">회원가입</a>
+          </div>
+        </section>
+      </div>
+      <div id="main-second-block">
+        <div class="float-left">
+          <section id="main-ytn">
+            <h3>연합뉴스</h3>
+            <ol>
+              <a href="" style="color: black;"><li>충격) 올해 크리스마스는 추울 것으로 예상..</li></a>
+            </ol>
+          </section>
+          <section id="main-newsstand">
+            <h3>뉴스스탠드</h3>
+            <ul>
+              <li><img src="./과학동아.png" alt="뉴데일리" /></li>
+              <li><img src="./한국일보.png" alt="JTBC" /></li>
+              <li><img src="./osen.png" alt="오마이뉴스" /></li>
+              <li><img src="./매일경제.png" alt="매일경제" /></li>
+              <li><img src="./파이낸셜뉴스.png" alt="파이낸셜뉴스" /></li>
+              <li><img src="./한국경제TV.png" alt="한국경제TV" /></li>
+              <li><img src="./과학동아.png" alt="과학동아" /></li>
+              <li><img src="./한국일보.png" alt="한국일보" /></li>
+              <li><img src="./osen.png" alt="osen" /></li>
+              <li><img src="./매일경제.png" alt="매일경제" /></li>
+              <li><img src="./파이낸셜뉴스.png" alt="파이낸셜뉴스" /></li>
+              <li><img src="./한국경제TV.png" alt="한국경제TV" /></li>
+              <li><img src="./과학동아.png" alt="과학동아" /></li>
+              <li><img src="./한국일보.png" alt="한국일보" /></li>
+              <li><img src="./osen.png" alt="osen" /></li>
+              <li><img src="./매일경제.png" alt="매일경제" /></li>
+              <li><img src="./파이낸셜뉴스.png" alt="파이낸셜뉴스" /></li>
+              <li><img src="./한국경제TV.png" alt="한국경제TV" /></li>
+            </ul>
+          </section>
+        </div>
+        <div class="float-left">
+          <section id="card-news">
+            <h3 class="blind">카드뉴스</h3>
+           
+          </section>
+          <section id="main-second-ad">
+            <h3 class="blind">광고</h3>
+            <img src="https://ssl.pstatic.net/tveta/libs/1372/1372759/6c3fc66f7816be5489b5_20211223102714757.jpg"
+              width="350" height="200">
+          </section>
+        </div>
+      </div>
+      <div id="main-third-block">
+        <section id="main-category">
+          <h3 class="blind">주제별 보기</h3>
+          <div id="main-category-top">
+            <button id="subject-all">
+              <span class="blind">전체 주제 열기</span>
+              <span></span>
+            </button>
+            <div id="subject-list">
+              <div class="opacity left"></div>
+              <ul>
+                <a href="">
+                  <li>리빙</li>
+                </a>
+                <a href="">
+                  <li>푸드</li>
+                </a>
+                <a href="">
+                  <li>스포츠</li>
+                </a>
+                <a href="">
+                  <li>자동차</li>
+                </a>
+                <a href="">
+                  <li>패션뷰티</li>
+                </a>
+                <a href="">
+                  <li>부모i</li>
+                </a>
+                <a href="">
+                  <li class="highlight">건강</li>
+                </a>
+                <a href="">
+                  <li>웹툰</li>
+                </a>
+                <a href="">
+                  <li>게임</li>
+                </a>
+                <a href="">
+                  <li>티비</li>
+                </a>
+                <a href="">
+                  <li>TV연예</li>
+                </a>
+                <a href="">
+                  <li>뮤직</li>
+                </a>
+                <a href="">
+                  <li>영화</li>
+                </a>
+                <a href="">
+                  <li>책문화</li>
+                </a>
+              </ul>
+              <section id="list-tab">
+              
+                <ul>
+                  <li><a href="">전체</a></li>
+                  <li><a href="">인기</a></li>
+                  <li><a href="">게임</a></li>
+                  <li><a href="">건강</a></li>
+                  <li><a href="">어학</a></li>
+                  <li><a href="">육아</a></li>
+                </ul>
+              </section>
+
+
+
+
+
+              <div class="media_view_wrap type_column">
+		<div class="media_view">
+			
+				<a href="https://in.naver.com/dox1120/contents/internal/383651718581632" class="media_area" data-da-position="true" data-gdid="90000003_0000000000000033D3FBE22A" data-clk="tcc_sub.list1cont1" target="_blank">
+					<div class="media_thumb">
+						<img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fdiscovercrop-phinf.pstatic.net%2F%2FMjAyMTEyMjBfMTYg%2FMDAxNjM5OTk1ODY1ODYy.UbKcna_vv_eCYrd8aKUdKwnsqXeUs826EiJuEIBoc4Yg.OiMFzx5-j4IwkcETwW3jdzzPA9HXw2kNkd1a8-8TbdUg.JPEG%2Fimage_750x420.jpg%22&amp;type=nf464_260" alt="우리 가족만의 캠핑장 컨테이너 하우스 1달 후기 ~" width="232" height="130" loading="lazy">
+
+						
+							<span class="thumb_bd"></span>
+						
+					</div>
+					<div class="media_info">
+						<div class="info_box">
+							
+							<strong class="title ">우리 가족만의 캠핑장 컨테이너 하우스 1달 후기 ~</strong>
+							<div class="source_wrap">
+								<span class="date">6일 전</span>
+                                <span class="source">
+                                    
+                                        <span class="source_thumb"><img src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAxNzEwMDVfODYg%2FMDAxNTA3MTY4OTQzMzMy.q3APs0jZkI-4NmlETHJr961dCP1F0ed5HDS8RAk-YoUg.3_xwmX2JX0zFDxDLgcMjJM7MajcajO0YacLH7jK4-E4g.JPEG.dox1120%2FprofileImage.jpg%22&amp;type=navermain_nf40_40" alt="" width="20" height="20" onerror="this.parentNode.outerHTML=''" loading="lazy"></span>
+                                    
+                                    <span class="source_inner"><em class="theme_hl">인플루언서</em>유주파파</span>
+                                </span>
+							</div>
+						</div>
+					</div>
+				</a>
+			
+				<a href="https://in.naver.com/pass9937/contents/internal/384692531838912" class="media_area" data-da-position="true" data-gdid="90000003_0000000000000033D424B8D1" data-clk="tcc_sub.list1cont2" target="_blank">
+					<div class="media_thumb">
+						<img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fdiscovercrop-phinf.pstatic.net%2F%2FMjAyMTEyMjNfMTIg%2FMDAxNjQwMjMzNDc3MzA5.P3Bf9Y77TVrBSDY2Ciy3xdvfocpl8Dm88X1fmDEZCfog.JmzonlELQ_6VDzeuU9-9gYtqWgFqTOQ07mQDxK9j8Bog.JPEG%2Fimage_374x246.jpg%22&amp;type=nf464_260" alt="제라늄 삽목, 물꽂이" width="232" height="130" loading="lazy">
+
+						
+							<span class="thumb_bd"></span>
+						
+					</div>
+					<div class="media_info">
+						<div class="info_box">
+							
+							<strong class="title ">제라늄 삽목, 물꽂이</strong>
+							<div class="source_wrap">
+								<span class="date">3일 전</span>
+                                <span class="source">
+                                    
+                                        <span class="source_thumb"><img src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyMTEyMTlfMTQ5%2FMDAxNjM5ODgyMTU1NjUx.xvcF_xCP_wKTOJT_ULRBGjAp04m2M_SI-BwCSdf1RW8g.S1gixlZLg2OSeZ4pYEaAYV8r3KBrui2rF-V6pq0P1rkg.JPEG.pass9937%2F20211214%2B%252857%2529.JPG%22&amp;type=navermain_nf40_40" alt="" width="20" height="20" onerror="this.parentNode.outerHTML=''" loading="lazy"></span>
+                                    
+                                    <span class="source_inner"><em class="theme_hl">인플루언서</em>다육이 엄마</span>
+                                </span>
+							</div>
+						</div>
+					</div>
+				</a>
+			
+				<a href="https://in.naver.com/neop/contents/internal/385181389070304" class="media_area" data-da-position="true" data-gdid="90000003_0000000000000033D437F39A" data-clk="tcc_sub.list1cont3" target="_blank">
+					<div class="media_thumb">
+						<img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fdiscovercrop-phinf.pstatic.net%2F%2FMjAyMTEyMjRfMjY5%2FMDAxNjQwMzQ5MTc0MTc2.d4z1rvbJCeqFx8I_t7YqRxP9IkgG-tEuP6UTMg4FPRwg.JzEj5KJBEhpmFgLeIflg9cZaoyMWOq3ZUconJkaMnFog.JPEG%2Fimage_374x246.jpg%22&amp;type=nf464_260" alt="블레이드앤소울2 크리스마스 이벤트 공략 블소2 코스튬 얻는 방법" width="232" height="130" loading="lazy">
+
+						
+							<span class="thumb_bd"></span>
+						
+					</div>
+					<div class="media_info">
+						<div class="info_box">
+							
+							<strong class="title ">블레이드앤소울2 크리스마스 이벤트 공략 블소2 코스튬 얻는 방법</strong>
+							<div class="source_wrap">
+								<span class="date">2일 전</span>
+                                <span class="source">
+                                    
+                                        <span class="source_thumb"><img src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAxNzA2MTlfMjk3%2FMDAxNDk3ODA0ODI4NzUy.Eejdpf8TthJI6C3Os1sc2x_IkII6RgReoNiZDY1hoa4g.meyRgxSw3YX0wwPUZ1jlmfi0c8-L43eAbOQM1TWzEGkg.PNG.doek11%2Fprofile.PNG%22&amp;type=navermain_nf40_40" alt="" width="20" height="20" onerror="this.parentNode.outerHTML=''" loading="lazy"></span>
+                                    
+                                    <span class="source_inner"><em class="theme_hl">인플루언서</em>네오필</span>
+                                </span>
+							</div>
+						</div>
+					</div>
+				</a>
+			
+				<a href="https://in.naver.com/leescook/contents/internal/384377462153184" class="media_area" data-da-position="true" data-gdid="90000003_0000000000000033D418D0CD" data-clk="tcc_sub.list1cont4" target="_blank">
+					<div class="media_thumb">
+						<img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fdiscovercrop-phinf.pstatic.net%2F%2FMjAyMTEyMjNfMjA5%2FMDAxNjQwMjMxMjA0Nzgx.tDY86JI-dZv2QoE_9Qmkz2O4mmEBU0uPAaGTvmkWDPcg.lZL1wiOD6zBVcalZ7XJAOs-GL4zwH55B5iLPNNxVTYcg.JPEG%2Fimage_374x246.jpg%22&amp;type=nf464_260" alt="크리스마스 홈파티 간단한 맥주안주 와인안주 소세지야채볶음" width="232" height="130" loading="lazy">
+
+						
+							<span class="thumb_bd"></span>
+						
+					</div>
+					<div class="media_info">
+						<div class="info_box">
+							
+							<strong class="title ">크리스마스 홈파티 간단한 맥주안주 와인안주 소세지야채볶음</strong>
+							<div class="source_wrap">
+								<span class="date">4일 전</span>
+                                <span class="source">
+                                    
+                                        <span class="source_thumb"><img src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAxNjEyMDFfMTA4%2FMDAxNDgwNTk1NjEwMDYz.BLlOsAp0zRz52gxUmOfQv3CkdZvMraSEO2GE6AwZ0Z0g.Ap2zfc2WrEIC3HZZnpfDQvxdCerM_nqau97fpDFqm5wg.JPEG.cooklhj%2F%25BA%25ED%25B7%25CE%25B1%25D7%25C0%25CE_%2B%25C0%25CC%25C7%25F6%25C1%25D6-1.jpg%22&amp;type=navermain_nf40_40" alt="" width="20" height="20" onerror="this.parentNode.outerHTML=''" loading="lazy"></span>
+                                    
+                                    <span class="source_inner"><em class="theme_hl">인플루언서</em>잠꾸러기</span>
+                                </span>
+							</div>
+						</div>
+					</div>
+				</a>
+			
+				<a href="https://m.post.naver.com/viewer/postView.naver?volumeNo=32999846&amp;memberNo=12478036&amp;vType=VERTICAL" class="media_area" data-da-position="true" data-gdid="00055f7ca0_0001f789a6" data-clk="tcc_sub.list1cont5" target="_blank">
+					<div class="media_thumb">
+						<img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fdiscovercrop-phinf.pstatic.net%2F%2FMjAyMTEyMjNfMTgg%2FMDAxNjQwMjYzMjU2ODE2._zuzivOVsqHxABk-QwJpR0huaGhFOn_R_jbRSIq0AZEg.xrp382AmCO00IG_d40_vLJ72V2t2OVdTMTVBmQDeidIg.JPEG%2Fimage_374x246.jpg%22&amp;type=nf464_260" alt="이 만화가 게임으로?2022년 출시 예정 모바일 3종" width="232" height="130" loading="lazy">
+
+						
+							<span class="thumb_bd"></span>
+						
+					</div>
+					<div class="media_info">
+						<div class="info_box">
+							
+							<strong class="title ">이 만화가 게임으로?2022년 출시 예정 모바일 3종</strong>
+							<div class="source_wrap">
+								<span class="date">3일 전</span>
+                                <span class="source">
+                                    
+                                        <span class="source_thumb"><img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fpost.phinf%2F20150413_132%2Fgame_chosun_1428915229333QG4z3_JPEG%2Fgame_chosun_8394176817255707649.jpg%3Ftype%3Df200_200%22&amp;type=navermain_nf40_40" alt="" width="20" height="20" onerror="this.parentNode.outerHTML=''" loading="lazy"></span>
+                                    
+                                    <span class="source_inner">게임조선</span>
+                                </span>
+							</div>
+						</div>
+					</div>
+				</a>
+			
+				<div id="p_theme_watch_v_div" class="media_area"><div style="width: 100%; height: auto; margin: 0px auto;"><iframe id="p_theme_watch_v_div_tgtLREC" frameborder="no" scrolling="no" tabindex="-1" name="" style="width: 100%; height: 230px; visibility: inherit; display: block; border: 0px; vertical-align: bottom;"></iframe></div></div><a href="https://m.post.naver.com/viewer/postView.naver?volumeNo=32996238&amp;memberNo=1166780&amp;vType=VERTICAL" class="media_area" data-da-position="true" data-gdid="00055f7ca0_0001f77b8e" data-clk="tcc_sub.list1cont6" target="_blank">
+					<div class="media_thumb">
+						<img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fdiscovercrop-phinf.pstatic.net%2F%2FMjAyMTEyMjRfMjc0%2FMDAxNjQwMjgxMTY0NzEy.Whlh38JCz0o2H_Kq0Dg2QLMFA_dqyOHYIJfgssUOWl4g.3UapkIzF-8GgTAzsZrA3Km3VTTL3FttgtUOxG0IGzOgg.JPEG%2Fimage_374x246.jpg%22&amp;type=nf464_260" alt="멸망 후의 일상 순한 맛 69.모두 예상대로" width="232" height="130" loading="lazy">
+
+						
+							<span class="thumb_bd"></span>
+						
+					</div>
+					<div class="media_info">
+						<div class="info_box">
+							
+							<strong class="title ">멸망 후의 일상 순한 맛 69.모두 예상대로</strong>
+							<div class="source_wrap">
+								<span class="date">2일 전</span>
+                                <span class="source">
+                                    
+                                        <span class="source_thumb"><img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fpost.phinf%2FMjAxOTAyMjVfMTAy%2FMDAxNTUxMDYxODU4MzE3.zKTQx5MoSnUKsMqEN_FjFQpgx10rcS78A0yjqPX-7O4g.ofEJNQdau8RlVgfqWEsc4O1mjdC_Kbq-v655gPz5mCwg.PNG%2Fpost_960826753121259281.png%3Ftype%3Df200_200%22&amp;type=navermain_nf40_40" alt="" width="20" height="20" onerror="this.parentNode.outerHTML=''" loading="lazy"></span>
+                                    
+                                    <span class="source_inner">노동8호</span>
+                                </span>
+							</div>
+						</div>
+					</div>
+				</a>
+			
+				<a href="https://in.naver.com/chungwoo/contents/internal/385008356409088" class="media_area" data-da-position="true" data-gdid="90000003_0000000000000033D4267FDD" data-clk="tcc_sub.list1cont7" target="_blank">
+					<div class="media_thumb">
+						<img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fdiscovercrop-phinf.pstatic.net%2F%2FMjAyMTEyMjRfOTIg%2FMDAxNjQwMzA1NjY2ODU3.X97fyBezfZKAVozReiH7BGzt_CZIhcHarIR02nT-zUMg.QjZmTK6Uwc9VhVZ-J-03huuJxcEMa88vqwM6DWMkVkwg.JPEG%2Fimage_374x246.jpg%22&amp;type=nf464_260" alt="<킹스맨: 퍼스트 에이전트> 최초의 독립 기관 탄생 비화. 그리고 놓칠 수 없는 쿠키 영상" width="232" height="130" loading="lazy">
+
+						
+							<span class="thumb_bd"></span>
+						
+					</div>
+					<div class="media_info">
+						<div class="info_box">
+							
+							<strong class="title ">&lt;킹스맨: 퍼스트 에이전트&gt; 최초의 독립 기관 탄생 비화. 그리고 놓칠 수 없는 쿠키 영상</strong>
+							<div class="source_wrap">
+								<span class="date">2일 전</span>
+                                <span class="source">
+                                    
+                                        <span class="source_thumb"><img src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyMDA3MjVfOSAg%2FMDAxNTk1NjgzNjYxMDU1.537lj5GLCNr14qPzGWcx9ctOL-iJUgNxN5nztdP2hHsg.DpMsYqMTkx-PCUHDcVZEc-UD1FzitlvQ1riKS7LEuPkg.PNG.ban1329%2FprofileImage.png%22&amp;type=navermain_nf40_40" alt="" width="20" height="20" onerror="this.parentNode.outerHTML=''" loading="lazy"></span>
+                                    
+                                    <span class="source_inner"><em class="theme_hl">인플루언서</em>청우</span>
+                                </span>
+							</div>
+						</div>
+					</div>
+				</a>
+			
+				<a href="https://in.naver.com/dogtrain/contents/internal/385238375260256" class="media_area" data-da-position="true" data-gdid="90000003_0000000000000033D43AF9E2" data-clk="tcc_sub.list1cont8" target="_blank">
+					<div class="media_thumb">
+						<img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fdiscovercrop-phinf.pstatic.net%2F%2FMjAyMTEyMjVfMzMg%2FMDAxNjQwMzYwNTk4MTYx.Tb0SdKzL-bf0XH0kBB1Sw8V5XCrHCNbPxOJgItAv030g.rW22vfxO_OK78YXNWlHavD2QF2LKc-hbn_64BfYaqaAg.JPEG%2Fimage_374x246.jpg%22&amp;type=nf464_260" alt="스피치 개,스피츠 키우기 (성격 및 털빠짐)" width="232" height="130" loading="lazy">
+
+						
+							<span class="thumb_bd"></span>
+						
+					</div>
+					<div class="media_info">
+						<div class="info_box">
+							
+							<strong class="title ">스피치 개,스피츠 키우기 (성격 및 털빠짐)</strong>
+							<div class="source_wrap">
+								<span class="date">어제</span>
+                                <span class="source">
+                                    
+                                        <span class="source_thumb"><img src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAxODA1MThfMjU4%2FMDAxNTI2NjAwMTE0MzQ5.d00pnmzQdujNmgFPULpfVsXKFa70h0DUHxycpB0H84Ag.YEPzBc3Cdd8iCDfkdMt_oKdUtYyoWCp61_N1y4bd2-cg.JPEG.goodnonz%2FprofileImage.jpg%22&amp;type=navermain_nf40_40" alt="" width="20" height="20" onerror="this.parentNode.outerHTML=''" loading="lazy"></span>
+                                    
+                                    <span class="source_inner"><em class="theme_hl">인플루언서</em>행복한독파트너</span>
+                                </span>
+							</div>
+						</div>
+					</div>
+				</a>
+			
+				
+
+
+        
+			
+		</div>
+	</div>
+              <div class="opacity right"></div>
+            </div>
+            <button id="subject-prev">
+              <span class="blind">이전 주제</span>
+              <span></span>
+            </button>
+            <button id="subject-next">
+              <span class="blind">다음 주제</span>
+              <span></span>
+            </button>
+          </div>
+        </section>
+
+
+
+
+        <section id="main-shopping">
+          <h3 class="blind">쇼핑</h3>
+          <iframe src="https://castbox.shopping.naver.com/shopbox/main.nhn?" width="348" height="886"></iframe>
+        </section>
+      </div>
+
+      <div id="main-fourth-block">
+        <section id="main-event">
+          <h3>이벤트</h3>
+        </section>
+        <section id="main-third-ad">
+          <h3 class="blind">광고</h3>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="notice_box">
+      <a href="/">공지사항</a>
+      <a href="/">서비스 전체보기</a>
+    </div>
+    <div class="aside_box">
+      <div class="area_user">
+        <div class="area_user_row">
+          <span class="text_bold-13">Creators</span>
+          <ul>
+            <li><a href="/">크리에이터</a></li>
+            <li><a href="/">스몰비즈니스</a></li>
+          </ul>
+        </div>
+        <div class="area_user_row">
+          <span class="text_bold-13">Partners</span>
+          <ul>
+            <li><a href="/">비즈니스 광고</a></li>
+            <li><a href="/">스토어 개설</a></li>
+            <li><a href="/">지역업체 등록</a></li>
+          </ul>
+        </div>
+        <div class="area_user_row">
+          <span class="text_bold-13">Developers</span>
+          <ul>
+            <li><a href="/">네이버 개발자센터</a></li>
+            <li><a href="/">오픈API</a></li>
+            <li><a href="/">오픈소스</a></li>
+            <li><a href="/">네이버 D2</a></li>
+            <li><a href="/">네이버 D2SF</a></li>
+            <li><a href="/">네이버 랩스</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="area_col">
+        <div class="ac_content">
+          <div class="text_bold-13">웨일 브라우저</div>
+          <div class="ac_link"><a href="/">다운받기</a></div>
+        </div>
+        <a href=""><img src="./images/icon_whale.png" class="ac_img"></a>
+      </div>
+      <div class="area_col">
+        <div class="ac_content">
+          <div class="text_bold-13">프로젝트 꽃</div>
+          <div class="ac_link"><a href="/">바로가기</a></div>
+        </div>
+        <a href=""><img src="./images/icon_flower.png" class="ac_img"></a>
+      </div>
+    </div>
+    <div class="bottom_box">
+      <ul>
+        <li><a href="">회사소개</a></li>
+        <li><a href="">인재채용</a></li>
+        <li><a href="">제휴제안</a></li>
+        <li><a href="">이용약관</a></li>
+        <li><a href="">개인정보처리방침</a></li>
+        <li><a href="">청소년보호정책</a></li>
+        <li><a href="">네이버 정책</a></li>
+        <li><a href="">고객센터</a></li>
+        <li><a href="">&copy; NAVER Corp.</a></li>
+        <li><a href="">cop</a></li>
+      </ul>
+
+    </div>
+  </footer>
+</body>
+
+</html>
